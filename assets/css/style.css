@@ -217,7 +217,7 @@ p{
 
 .col1, .col2{
     border-radius: 50px;
-    border: 3px solid #ffffff; /* Ajusta el ancho del borde según lo necesites */
+    border: 3px solid #ffffff; 
     box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     padding: 20px;
@@ -226,7 +226,7 @@ p{
 
 .col3, .col4{
     /* background-color: #0813b3; */
-    /*border: 5px solid #0813b3;  Ajusta el ancho del borde según lo necesites */
+    /*border: 5px solid #0813b3; */
     box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     margin: 3px;
