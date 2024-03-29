@@ -5,10 +5,14 @@ body{
     background-color: #4b4a4a;
 }
 
+.banner {
+    
+}
+
 .bloque1 {
     height: 30em; /* Altura del bloque*/
-    width: 45%; /* Ancho del bloque*/
-    float: inline-start;
+    width: 44%; /* Ancho del bloque*/
+    float: inline-start; 
 }
 
 .bloque2 {
@@ -18,15 +22,11 @@ body{
 }
 
 .bloques {
-    margin: 1em;
+    margin: 1.5%;
     background-color: #efefef;
 }
 
-.galeria {
-    padding: 16px;
-}
-
-.lista_imagenes img {
+.lista_imagenes img { 
     width: 100%;
     object-fit: cover;
     width: 35%;
@@ -35,6 +35,36 @@ body{
 }
 
 .lista_imagenes {
+    padding: 16px;
     display: flex;
     overflow-y: auto;
+}
+
+.galeria {
+    padding: 16px;
+    display: flex;
+    overflow-y: auto;
+}
+
+.carta {
+    margin-right: 10px;
+    position: relative;
+}
+
+.carta img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cuerpo_carta {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.cuerpo_carta h5, .cuerpo_carta p {
+    margin: 0;
 }
