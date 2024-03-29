@@ -16,6 +16,10 @@ ul.nav {
     margin: 0;
 }
 
+ul li {
+    margin-bottom: 10px;
+  }
+
 #nav {
     background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d);
     padding: 10px;
@@ -213,15 +217,16 @@ p{
     width: 90%;
     /* background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d); */
     display: flex;
+    
 }
 
 .col1, .col2{
     border-radius: 50px;
     border: 3px solid #ffffff; 
-    box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     padding: 20px;
     margin: 20px;
+
 }
 
 .col3, .col4{
@@ -232,7 +237,22 @@ p{
     margin: 3px;
 }
 
+.col5{
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid #ffffff; 
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+
+}
+
 #estadisticas{
     padding: 10px;
     /* background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d); */
+}
+
+img.cr7 , img.klose{
+    width: auto;
+    height: 200px;
 }
