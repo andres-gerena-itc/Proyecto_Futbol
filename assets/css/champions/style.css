@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%,  #790630 52.5%, #590424 100%);
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Menú desplegable */
+.desplegable {
+    justify-content: center;
+    background-color: #043759 ;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    list-style: none;
+    margin: 0;
+}
+
+a.title {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    /* Elimina el subrayado */
+    transition: color 0.3s;
+    /* Transición suave para el cambio de color */
+}
+
+a.title:hover {
+    color: #ffcc00;
+    /* Cambia el color al pasar el cursor */
+}
+
+li.title {
+    padding: 0 7%;
+}
+
+#logo_champions {
+    /* Filter: Desenfoque o cambio de color a un elemento */
+    filter: invert(100%);
+    height: 50px;
+    width: auto;
+}
+
+#logo_mundial {
+    height: 50px;
+    width: auto;
+}
+
+#nav {
+    background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
 .container {
     background-color: rgba(255, 255, 255, 0.80);
     /* border: #fefbacd6 2px solid; */
@@ -6,41 +68,32 @@
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 1px;
+    margin: 0 ;
 }
 
 .uefalogo {
-    width: 8em;
-    border-radius: 43px;
+    width: 4em;
     margin-left: 18px;
     margin-right: 60px;
     display: inline;
 }
 
-.default {
-    text-align: center;
-}
-
 .table {
-    width: 100%;
-    border: 1px solid #000;
-    text-align: left;
-    vertical-align: top;
-    border-collapse: collapse;
-    padding: 0.3em;
-}
-
-.columDer {
-    width: 54em;
-    left: 2%;
-    margin-left: 9%;
-}
-
-.fila {
-    border-spacing: 5px 1rem;
-}
+    width: 90%;
+    text-align: center;
+    margin-left: 3%;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+th, td {
+    border: 1px solid #000000;
+    text-align: center;
+    color: #000000;
+    padding: 8px;
+  }
 
 .caption1 {
-    font-family: Oswald, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
     font-weight: 700;
@@ -58,5 +111,31 @@
 
 .div2 {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
+
+/* Carrusel */
+.carrusel {
+    padding: 16px;
+    display: flex;
+    overflow-y: auto;
+}
+.carta {
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+}
+.carta img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover; /* rellena espacio */
+}
+.cuerpo_carta {
+    border-top-style: none;
+    padding: 10px;
+    color: rgb(255, 255, 255)
+}
+.cuerpo_carta h5, .cuerpo_carta p {
+    margin: 0;
+}
+/* ~~~ */

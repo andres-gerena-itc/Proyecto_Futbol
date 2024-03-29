@@ -6,16 +6,61 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="icon" href="../assets/img/logo-champions-icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/champions/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
     <title>UEFA Champions league</title>
 </head>
 
-
 <body>
+
+    <header id="header">
+        <nav id="nav">
+            <ul class="nav">
+                <img id="logo_champions" src="../assets/img/logo-champions-icono.png" alt="icon_champions">
+                <li class="title"><a class="title" href="champions.html">CHAMPIONS 2024</a></li>
+                <li class="title"><a class="title" href="../index.html">HOME</a></li>
+                <li class="title"><a class="title" href="mundial.html">MUNDIAL QATAR 2022</a></li>
+                <img id="logo_mundial" src="../assets/img/logoqatar.png" alt="icon_mundial">
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banner"> <br>
+        <img class="uefalogo" src="../assets/img/ucl-logo-blanco.png">
+        <h1 class="nav">DESTACADOS</h1>
+        <!-- Menú desplegable -->
+        <form action="#">
+            <label for="lang">Jugadores</label>
+            <select>
+                <option value=""></option>
+                <option value="Kylian Mbappé">Kylian Mbappé</option>
+                <option value="Erling Haaland">Erling Haaland</option>
+                <option value="Lionel Messi">Lionel Messi</option>
+                <option value="Mohamed Salah">Mohamed Salah</option>
+                <option value="Karim Benzema">Karim Benzema</option>
+            </select>
+            <input type="submit" value="Enviar" />
+        </form>
+
+        <form action="#">
+            <label for="lang">Equipos</label>
+            <select>
+                <option value=""></option>
+                <option value="Paris Saint-Germain (PSG)">Paris Saint-Germain (PSG)</option>
+                <option value="Real Madrid">Real Madrid</option>
+                <option value="Bayern Munich">Bayern Munich</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Manchester City ">Manchester City </option>
+            </select>
+            <input type="submit" value="Enviar" />
+        </form>
+
+    </div> <br> <br><br>
+
     <div class="container">
-        <img class="uefalogo" src="../assets/img/uefa.png">
-        <table class="default columDer">
+        <table class="table">
             <caption class="caption1">Estadísticas del jugador</caption>
-            <tr">
+            <!-- Creación de tablas, mezcla con <th> y <td> -->
+            <tr>
                 <th></th>
                 <th>Minutos jugados</th>
                 <th>Partidos jugados</th>
@@ -24,83 +69,157 @@
                 <th>Distancia recorrida</th>
                 <th>Velocidad máxima</th>
                 </th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/gabriel.png" alt="">
+                            Gabriel <br> Arsenal - Defensa
+                        </div>
+                    </td>
+                    <td>750</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>90.1</td>
+                    <td>32.5</td>
                 </tr>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="div2"><img class="jugador" src="../assets/img/gabriel.png" alt="">
-                                Gabriel <br> Arsenal - Defensa
-                            </div>
-                        </td>
-                        <td>750</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>90.1</td>
-                        <td>32.5</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="div2"><img class="jugador" src="../assets/img/diogo.png" alt="">
-                                Diogo Costa <br> FC Porto - Arquero
-                            </div>
-                        </td>
-                        <td>750</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>45.3</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="div2"><img class="jugador" src="../assets/img/Oblakk.png" alt=""> Jan
-                                Oblak <br> Atlético de Madird - Arquero
-                            </div>
-                        </td>
-                        <td>750</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>45.3</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="div2"><img class="jugador" src="../assets/img/hermoso.png" alt=""> Mario
-                                Hermoso <br> Atlético de Madrid - Defensa
-                            </div>
-                        </td>
-                        <td>728</td>
-                        <td>8</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>88</td>
-                        <td>32.8</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="div2"><img class="jugador" src="../assets/img/saliba.png" alt="">
-                                William Saliba <br> Arsenal - Defensa
-                            </div>
-                        </td>
-                        <td>721</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>82.5</td>
-                        <td>34</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tfoot>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/diogo.png" alt="">
+                            Diogo Costa <br> FC Porto - Arquero
+                        </div>
+                    </td>
+                    <td>750</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>45.3</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/Oblakk.png" alt=""> Jan
+                            Oblak <br> Atlético de Madird - Arquero
+                        </div>
+                    </td>
+                    <td>750</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>45.3</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/hermoso.png" alt=""> Mario
+                            Hermoso <br> Atlético de Madrid - Defensa
+                        </div>
+                    </td>
+                    <td>728</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>88</td>
+                    <td>32.8</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/saliba.png" alt="">
+                            William Saliba <br> Arsenal - Defensa
+                        </div>
+                    </td>
+                    <td>721</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>82.5</td>
+                    <td>34</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>hfjudhfgdh</td>
+                    <td>dnvdfhidf</td>
+                </tr>
+            </tfoot>
         </table>
+    </div> <br><br><br>
 
+    <div class="carrusel">
+        <div class="carta">
+            <img src="../assets/img/halaand.png">
+            <div class="cuerpo_carta">
+                <p>Manchester City</p>
+                <h5>Erling Haaland</h5>
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/mbappe.png">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/bellingham.png">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/messi.png">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/dios.png">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/debruyne.png">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/img7.JPG">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/img8.JPG">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/img9.JPG">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="carta">
+            <img src="../assets/img/img10.JPG">
+            <div class="cuerpo_carta">
+                <h5>Carta 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
     </div>
+
+
 
 </body>
 
