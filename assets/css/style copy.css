@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
-    background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%,  #790630 52.5%, #590424 100%);
+    background-color: #ffffff;
     margin: 0;
-    color: #ffffff;
 }
 
 ul.nav {
@@ -178,18 +177,12 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 64);
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
-
-/* h2.txt {
-    color: rgb(0, 0, 64);
-} */
-
-
 
 /* h2.sub{
     color: #ffffff;
@@ -217,16 +210,16 @@ p{
 
 .col1, .col2{
     border-radius: 50px;
-    border: 3px solid #ffffff; 
+    border: 5px solid #b4ab2b; /* Ajusta el ancho del borde según lo necesites */
     box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     padding: 20px;
-    margin: 20px;
+    margin: 3px;
 }
 
 .col3, .col4{
-    /* background-color: #0813b3; */
-    /*border: 5px solid #0813b3; */
+    background-color: #0813b3;
+    border: 5px solid #0813b3; /* Ajusta el ancho del borde según lo necesites */
     box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     margin: 3px;
@@ -234,5 +227,5 @@ p{
 
 #estadisticas{
     padding: 10px;
-    /* background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d); */
+    background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d);
 }
