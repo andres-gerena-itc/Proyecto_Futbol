@@ -1,0 +1,40 @@
+body{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 98%;
+    background-color: #4b4a4a;
+}
+
+.bloque1 {
+    height: 30em; /* Altura del bloque*/
+    width: 45%; /* Ancho del bloque*/
+    float: inline-start;
+}
+
+.bloque2 {
+    height: 14em;
+    width: 23%;
+    float: inline-start;
+}
+
+.bloques {
+    margin: 1em;
+    background-color: #efefef;
+}
+
+.galeria {
+    padding: 16px;
+}
+
+.lista_imagenes img {
+    width: 100%;
+    object-fit: cover;
+    width: 35%;
+    height: 35%;
+    margin-right: 1em;
+}
+
+.lista_imagenes {
+    display: flex;
+    overflow-y: auto;
+}
