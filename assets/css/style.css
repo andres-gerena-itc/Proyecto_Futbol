@@ -375,20 +375,17 @@ footer {
   }
   
   .container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .logos {
-  }
-  
   .logos img {
     margin-right: 10px;
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 110px;
   }
   
   .redes-sociales {
@@ -415,10 +412,6 @@ footer {
     margin-left: 20px;
   }
   
-  .newsletter form {
-    display: flex;
-  }
-  
   .newsletter input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -438,8 +431,8 @@ footer {
   }
   
   .newsletter button:hover {
-    background-color: #ddd;
-    color: #000;
+    background-color: #520101;
+    color: #ffffff;
   }
 
   .inferior {
