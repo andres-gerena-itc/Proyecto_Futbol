@@ -1,10 +1,16 @@
+/* Importación Fuente de Google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
 
 body {
     background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%, #790630 52.5%, #590424 100%);
     margin: 0;
     color: #ffffff;
 }
+
+/*Header*/
 
 ul.nav {
     display: flex;
@@ -14,10 +20,6 @@ ul.nav {
     /* Centra verticalmente los elementos */
     list-style: none;
     margin: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
 
 #nav {
@@ -61,6 +63,12 @@ li.title {
     height: 50px;
     width: auto;
 }
+
+/*---------------------------------*/
+
+
+
+/*Banner*/
 
 #banner {
     background: linear-gradient(to right, rgb(0, 0, 64), #6e0021);
@@ -179,20 +187,18 @@ button:hover {
     transform: scale(1.1);
 }
 
+/*----------------------------------*/
+
 h1 {
     color: #ffffff;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 27px;
-    position: absolute;
-    /* Posicionamiento absoluto */
-    top: 5%;
-    /* Centrado vertical */
-    left: 50%;
-    /* Centrado horizontal */
-    transform: translate(-50%, -50%);
-    /* Ajuste para centrado horizontal y vertical */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 5%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste para centrado horizontal y vertical */
     z-index: 1;
 }
 
@@ -204,28 +210,16 @@ h2 {
     text-align: center;
 }
 
-/* h2.txt {
-    color: rgb(0, 0, 64);
-} */
 
-
-
-/* h2.sub{
-    color: #ffffff;
-} */
-
-h3 {
-    color: #ffffff;
-    text-align: center;
-}
-
-p {
+p.text {
     font-family: sans-serif;
     width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
+
+/*LISTAS -- Goleadores Ultimas Ediciones */
 
 .cont_listas {
     margin: 0 auto;
@@ -242,7 +236,6 @@ p {
     flex: 1;
     padding: 20px;
     margin: 20px;
-
 }
 
 .col3,
@@ -265,8 +258,9 @@ p {
 
 }
 
+
 #estadisticas {
-    padding: 10px;
+    padding: 20px;
 }
 
 img.cr7,
@@ -274,6 +268,11 @@ img.klose {
     width: auto;
     height: 200px;
 }
+
+/*----------------------------------*/
+
+
+/*Jugadores Emblema*/
 
 #emblemas {
     background-color: rgba(255, 255, 255, 0.774) !important;
@@ -304,7 +303,11 @@ img.emblema {
 
 }
 
-.tables{
+/*----------------------------------*/
+
+/*Tablas*/
+
+.tables {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -313,7 +316,7 @@ table {
     width: 100%;
 }
 
-.tab{
+.tab {
     margin: 0 15px;
 }
 
@@ -326,31 +329,140 @@ td {
 }
 
 th {
+    background-color: rgba(255, 0, 0, 0.459);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 90%;
-    border-bottom: 2px solid #111111;
-    border-top: 1px solid #999;
     text-align: left;
-    
+
 }
 
 tr:hover {
     background-color: #794e00;
 }
 
-.money {
-    text-align: right;
-}
 
-.videos{
+.videos {
     margin: 0 auto;
     width: 90%;
     display: flex;
 }
 
-.vid{
+.vid {
     flex: 1;
     margin: 20px;
     filter: drop-shadow(rgba(255, 255, 255, 0.699) 0px 0px 15px);
 }
+
+
+
+
+
+/*Footer*/
+
+footer {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("../img/background-champions-2.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logos {
+  }
+  
+  .logos img {
+    margin-right: 10px;
+    width: 120px;
+    height: auto;
+  }
+  
+  .redes-sociales {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .redes-sociales a {
+    margin: 0 5px;;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .redes-sociales .titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .redes-sociales a:hover {
+    color: #ddd;
+  }
+  
+  .newsletter {
+    margin-left: 20px;
+  }
+  
+  .newsletter form {
+    display: flex;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .newsletter button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 15px ;
+  }
+  
+  .newsletter button:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+
+  .inferior {
+    background-color: #222222a8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 75px;
+    width: 100%;
+  }
+  
+  .inferior p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .inferior a {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  
+  .inferior a:hover {
+    color: #ddd;
+  }
+  
