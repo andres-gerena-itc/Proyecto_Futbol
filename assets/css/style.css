@@ -148,6 +148,7 @@ li.title {
 }
 
 button#button2 {
+    left: 90%;
     padding: 10px;
     color: rgb(255, 255, 255);
     background-color: #6e0021;
@@ -161,6 +162,7 @@ button#button2 {
 }
 
 button#button1 {
+    right: 90%;
     padding: 10px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 64);
@@ -274,7 +276,7 @@ img.klose {
 }
 
 #emblemas {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255, 0.774) !important;
     border-radius: 15px;
     color: #02007e;
     border: 3px solid #ffee00;
@@ -350,4 +352,5 @@ tr:hover {
 .vid{
     flex: 1;
     margin: 20px;
+    filter: drop-shadow(rgba(255, 255, 255, 0.699) 0px 0px 15px);
 }
