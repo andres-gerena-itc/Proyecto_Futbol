@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
-    background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%,  #790630 52.5%, #590424 100%);
+    background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%, #790630 52.5%, #590424 100%);
     margin: 0;
     color: #ffffff;
 }
@@ -18,13 +18,18 @@ ul.nav {
 
 ul li {
     margin-bottom: 10px;
-  }
+}
 
 #nav {
     background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d);
     padding: 10px;
     margin: 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 a.title {
@@ -63,6 +68,7 @@ li.title {
     display: flex;
     position: relative;
     /*se posicionan elementos hijos*/
+    margin-top: 70px;
 }
 
 #banner img {
@@ -102,6 +108,8 @@ li.title {
     height: 45vh;
     position: relative;
     z-index: 1;
+    filter: drop-shadow(rgba(255, 255, 255, 0.66) 0px 0px 10px);
+    transition: transform 0.5s ease-in-out 0s;
 }
 
 #super img#trof_2 {
@@ -110,6 +118,8 @@ li.title {
     height: 43vh;
     position: relative;
     z-index: 1;
+    filter: drop-shadow(rgba(255, 255, 255, 0.66) 0px 0px 10px);
+    transition: transform 0.5s ease-in-out 0s;
 }
 
 #super img:hover {
@@ -120,7 +130,7 @@ li.title {
 #btns button {
     margin: 0 25%;
     position: relative;
-    z-index: 1;
+    transition: transform 0.3s ease-in-out 0s;
 }
 
 #btns {
@@ -173,9 +183,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 27px;
-    position: absolute;/* Posicionamiento absoluto */
-    top: 5%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 5%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
     transform: translate(-50%, -50%);
     /* Ajuste para centrado horizontal y vertical */
     z-index: 1;
@@ -199,60 +212,142 @@ h2 {
     color: #ffffff;
 } */
 
-h3{
+h3 {
     color: #ffffff;
     text-align: center;
 }
 
-p{
-    font-family:sans-serif;
+p {
+    font-family: sans-serif;
     width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 
-.cont_listas{
+.cont_listas {
     margin: 0 auto;
     width: 90%;
     /* background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d); */
     display: flex;
-    
+
 }
 
-.col1, .col2{
+.col1,
+.col2 {
     border-radius: 50px;
-    border: 3px solid #ffffff; 
+    border: 3px solid #ffffff;
     flex: 1;
     padding: 20px;
     margin: 20px;
 
 }
 
-.col3, .col4{
+.col3,
+.col4 {
     /* background-color: #0813b3; */
     /*border: 5px solid #0813b3; */
-    box-sizing: border-box; /* Hace que el ancho del borde se incluya dentro del ancho total */
+    box-sizing: border-box;
+    /* Hace que el ancho del borde se incluya dentro del ancho total */
     flex: 1;
     margin: 3px;
 }
 
-.col5{
+.col5 {
     text-align: center;
     border-radius: 50px;
-    border: 3px solid #ffffff; 
+    border: 3px solid #ffffff;
     flex: 1;
     padding: 20px;
     margin: 20px;
 
 }
 
-#estadisticas{
+#estadisticas {
     padding: 10px;
-    /* background: linear-gradient(to right, rgb(0, 0, 64), #8d1c3d); */
 }
 
-img.cr7 , img.klose{
+img.cr7,
+img.klose {
     width: auto;
     height: 200px;
+}
+
+#emblemas {
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 15px;
+    color: #02007e;
+    border: 3px solid #ffee00;
+    padding: 30px;
+
+}
+
+h2.title-emblema {
+    color: #02007e;
+}
+
+#jugadores {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    /*centra imagenes en ambas direcciones*/
+}
+
+img.emblema {
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+
+}
+
+.tables{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+table {
+    width: 100%;
+}
+
+.tab{
+    margin: 0 15px;
+}
+
+
+
+th,
+td {
+    padding: 7px 10px 10px 10px;
+    border: solid 1px;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999;
+    text-align: left;
+    
+}
+
+tr:hover {
+    background-color: #794e00;
+}
+
+.money {
+    text-align: right;
+}
+
+.videos{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+}
+
+.vid{
+    flex: 1;
+    margin: 20px;
 }
