@@ -61,22 +61,16 @@ li.title {
     background-position: center;
     padding: 2%;
     padding-bottom: 2%;
-    text-align: center;
 }
 .bloque1 {
     height: 480px; /* Alto del bloque*/
     width: 44.5%; /* Ancho del bloque*/
-    /* float: inline-start;  */
+    float: left;
 }
 .bloque2 {
     height: 224px;
     width: 23%;
-    /* float: inline-start; */
-}
-.bloque3 {
-    height: 224px;
-    width: 23%;
-    /* display: flex; */
+    display: inline-block;
 }
 .bloques {
     margin: 1.5%;
