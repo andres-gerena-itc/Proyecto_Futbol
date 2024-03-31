@@ -37,6 +37,10 @@ p {
     align-items: center;
     justify-content: center;
 }
+.clasecreadaparacentrarundiv {
+    justify-content: center;
+    display: flex;
+}
 
 /* Header */
 ul.nav {
@@ -97,12 +101,17 @@ li.title {
     letter-spacing: 2px;
     text-align: left;
 }
+.banner-cont {
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+}
 .bloque1 {
     /* ↓ Alto del bloque*/
     height: 380px; 
     /* ↓ Ancho del bloque*/
-    width: 60%; 
-    float: left;
+    width: 56%; 
+    display: inline-block;
 }
 .vid1{
     width: 100%;
@@ -210,10 +219,11 @@ li.title {
 .momentos {
     margin-top: 3%;
     margin-bottom: 2%;
+    justify-content: center;
+    display: flex;
 }
 .bloque3 {
-    height: 260px;
-    width: 30%;
+    width: 340px;
     float:left;
 }
 .bloque3 h3 {
@@ -232,8 +242,7 @@ li.title {
     transform: scale(1.05);
 }
 .bloque4 {
-    height: 260px;
-    width: 30%;
+    width: 340px;
     display: inline-block;
 }
 .bloque4 h3 {
@@ -267,7 +276,6 @@ li.title {
     text-align: center;
 }
 .img1 {
-    padding: 0.5%;
     width: 1069px;
     transition: 0.5s;
 }
@@ -284,6 +292,29 @@ li.title {
     padding: 2%;
     padding-bottom: 4%;
     text-align: center;
+}
+.mascota h2 {
+    color: white;
+}
+.img3 {
+    width: 350px;
+    transition: 0.5s;
+}
+.img3:hover {
+    transform: scale(1.1);
+}
+.bloque5 {
+    width: 60%;
+    border-radius: 8px;
+    background-color: rgba(173, 173, 173, 0.4);
+    border: rgba(109,17,48) 2px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.bloque5:hover {
+    transform: scale(1.01);
 }
 /* ~~~~~ */
 
@@ -304,5 +335,21 @@ li.title {
     padding: 2%;
     padding-bottom: 4%;
     text-align: center;
+}
+.resumen h2 {
+    color: white;
+}
+.bloque6 {
+    width: 700px;
+    display: inline-block;
+}
+.vid3{
+    width: 100%;
+    border-radius: 8px;
+    border: yellow 1px solid;
+    transition: 0.5s;
+}
+.vid3:hover {
+    transform: scale(1.04);
 }
 /* ~~~~~ */
