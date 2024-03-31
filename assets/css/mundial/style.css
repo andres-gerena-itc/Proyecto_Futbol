@@ -319,11 +319,43 @@ li.title {
 /* ~~~~~ */
 
 /* Tablas */
-.tablas {
+.tablas-cont {
     background-color: rgb(238,238,228);
     padding: 2%;
     padding-bottom: 4%;
     text-align: center;
+}
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 320px;
+    display: inline-block;
+    margin: 0 15px;
+    margin-top: 20px;
+    /* background-color: #8d1c3d; */
+    transition: 0.5s;
+}
+.tabla:hover {
+    transform: scale(1.1);
+}
+th, td {
+    padding: 7px 8px 7px 8px;
+    border: solid 1px;
+}
+th {
+    background-color: rgb(206, 49, 109);
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    text-align: center;
+}
+td {
+    background-color: rgb(240, 189, 207);
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    text-align: center;
+}
+.img4 {
+    width: 20px;
 }
 /* ~~~~~ */
 
