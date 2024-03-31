@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="icon" href="../assets/img/logo-champions-icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/champions/style.css">
+    <link rel="stylesheet" href="../assets/js/main.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
     <title>UEFA Champions league</title>
 </head>
@@ -27,39 +28,57 @@
     <div id="banner"> <br>
         <img class="uefalogo" src="../assets/img/ucl-logo-blanco.png">
         <h1 class="nav">DESTACADOS</h1>
+
         <!-- Menú desplegable -->
-        <form action="#">
-            <label for="lang">Jugadores</label>
-            <select>
-                <option value=""></option>
-                <option value="Kylian Mbappé">Kylian Mbappé</option>
-                <option value="Erling Haaland">Erling Haaland</option>
-                <option value="Lionel Messi">Lionel Messi</option>
-                <option value="Mohamed Salah">Mohamed Salah</option>
-                <option value="Karim Benzema">Karim Benzema</option>
-            </select>
-            <input type="submit" value="Enviar" />
-        </form>
+        <div class="container2 desplegable">
+            <div class="desplegable">
+                <form action="#">
+                    <label>Jugadores</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="Kylian Mbappé">Kylian Mbappé</option>
+                        <option value="Erling Haaland">Erling Haaland</option>
+                        <option value="Lionel Messi">Lionel Messi</option>
+                        <option value="Mohamed Salah">Mohamed Salah</option>
+                        <option value="Karim Benzema">Karim Benzema</option>
+                    </select>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+            <div class="container2 desplegable">
+                <form action="#">
+                    <label>Equipos</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="Paris Saint-Germain (PSG)">Paris Saint-Germain (PSG)</option>
+                        <option value="Real Madrid">Real Madrid</option>
+                        <option value="Bayern Munich">Bayern Munich</option>
+                        <option value="Liverpool">Liverpool</option>
+                        <option value="Manchester City ">Manchester City </option>
+                    </select>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+            <div class="container2 desplegable">
+                <form action="#">
+                    <label>Máx goleadores</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="CR7">Cristiano Ronaldo (141)</option>
+                        <option value="Messi">Lionel Messi (129)</option>
+                        <option value="Maluco">Robert Lewandowski(94)</option>
+                    </select>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+        </div>
+    </div>
 
-        <form action="#">
-            <label for="lang">Equipos</label>
-            <select>
-                <option value=""></option>
-                <option value="Paris Saint-Germain (PSG)">Paris Saint-Germain (PSG)</option>
-                <option value="Real Madrid">Real Madrid</option>
-                <option value="Bayern Munich">Bayern Munich</option>
-                <option value="Liverpool">Liverpool</option>
-                <option value="Manchester City ">Manchester City </option>
-            </select>
-            <input type="submit" value="Enviar" />
-        </form>
 
-    </div> <br> <br><br>
-
+    <!-- Creación de tablas, mezcla con <th> y <td> -->
     <div class="container">
-        <table class="table">
+        <table id=Tabla class="table">
             <caption class="caption1">Estadísticas del jugador</caption>
-            <!-- Creación de tablas, mezcla con <th> y <td> -->
             <tr>
                 <th></th>
                 <th>Minutos jugados</th>
@@ -144,87 +163,104 @@
                 </tr>
             </tfoot>
         </table>
-    </div> <br><br><br>
+    </div>
 
-    <div class="carrusel">
-        <div class="carta">
-            <img src="../assets/img/kaneCh.png">
-            <div class="cuerpo_carta">
-                <p>Manchester City</p>
-                <h5>Erling Haaland</h5>
+    <div class="container3">
+        <p></p>
+    </div>
+
+    <!-- Carrusel -->
+
+    <div class="containercartas">
+        <h2> Road to the Final de FIFA 24 </h2>
+        <div class="carrusel">
+            <div class="carta">
+                <img src="../assets/img/kaneCh.png">
+                <div class="cuerpo_carta">
+                    <h5> Bayern de Múnich </h5>
+                    <p> Harry Kane </p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/reusCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/reusCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Borussia Dortmund</h5>
+                    <p>Marco Reus</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/riceCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/riceCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Arsenal F. C.</h5>
+                    <p>Declan Rice</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/kroosCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/kroosCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Real Madrid C. F.</h5>
+                    <p>Toni Kroos</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/barellaCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/barellaCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Inter de Milán</h5>
+                    <p>Nicolò Barella</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/haalandCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/haalandCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Manchester City F. C.</h5>
+                    <p>Erling Braut Haaland</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/machadoCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/machadoCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Racing Club de Lens </h5>
+                    <p>Deiver Machado</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/osimhenCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/osimhenCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Società Sportiva Calcio Napoli </h5>
+                    <p>Victor James Osimhen</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/griezmannCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/griezmannCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Club Atlético de Madrid </h5>
+                    <p>Antoine Griezmann</p>
+                </div>
             </div>
-        </div>
-        <div class="carta">
-            <img src="../assets/img/hernandezCh.png">
-            <div class="cuerpo_carta">
-                <h5>Carta 1</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <div class="carta">
+                <img src="../assets/img/hernandezCh.png">
+                <div class="cuerpo_carta">
+                    <h5>Associazione Calcio Milan</h5>
+                    <p>Théo Bernard François Hernandez</p>
+                </div>
             </div>
             <div class="carta">
                 <img src="../assets/img/lewandowskiCh.png">
                 <div class="cuerpo_carta">
-                    <h5>Carta 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <h5>Fútbol Club Barcelona</h5>
+                    <p>Robert Lewandowski</p>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="bloquesss bloques bloque1">
+        <p>Apertura del mundial</p>
+    </div>
+
+    <div class="bloques bloque2">
+        <p>Mascota</p>
+    </div>
 
 
 </body>
