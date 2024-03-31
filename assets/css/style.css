@@ -329,7 +329,6 @@ td {
 }
 
 th {
-    background-color: rgba(255, 0, 0, 0.459);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 90%;
@@ -431,8 +430,8 @@ footer {
   }
   
   .newsletter button:hover {
-    background-color: #520101;
-    color: #ffffff;
+    background-color: #ddd;
+    color: #000;
   }
 
   .inferior {
