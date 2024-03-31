@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
-    background: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%,  #790630 52.5%, #590424 100%);
+    background: linear-gradient(to right, #b60bbe 0%, #0a1b51 0%, #c20fcf 97%);
     margin: 0;
     color: #ffffff;
 }
@@ -9,20 +9,22 @@ body {
 /* Menú desplegable */
 .desplegable {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: yellow;
-    display: inline-block;
-    margin: 20px;
-}
-
-.container2 {
-    text-align: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
     padding-bottom: 20px;
 }
 
+.container2{
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+/* finish menú desplegable */
+
 .nav {
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     /* Centra horizontalmente los elementos */
     align-items: center;
@@ -37,7 +39,6 @@ a.title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     text-decoration: none;
-    /* Elimina el subrayado */
     transition: color 0.3s;
     /* Transición suave para el cambio de color */
 }
@@ -70,51 +71,43 @@ li.title {
     text-align: center;
 }
 
-.container {
-    background-color: linear-gradient(to right, #02007e 0%, rgb(0, 0, 64) 47.5%,  #790630 52.5%, #590424 100%);
-    border: #fefbacd6 2px solid;
-    padding-right: 3em;
-    padding-left: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-radius: 1px;
-    margin-right: 10px;
-}
-
 .uefalogo {
     width: 4em;
     margin-left: 18px;
     margin-right: 60px;
     display: inline;
+    padding-bottom: 10px;
 }
 
+/* Estilo tablas */
 .table {
     width: 90%;
     text-align: center;
-    margin-left: 3%;
-  }
+    margin-left: 4%;
+    padding-bottom: 20px;
+}
 
-  /* Estilo para las celdas de la tabla */
-th, td {
+/* Estilo para las celdas de la tabla */
+th,
+td {
     border: 1px solid #000000;
-    text-align: center;
-    color: #000000;
+    color: #ffffff;
     padding: 8px;
-  }
+}
 
 .caption1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
     font-weight: 700;
-    color: #356494;
-    text-indent: 0;
-    margin: 0 0 .5em
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .jugador {
     width: 3em;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 2%;
     margin-right: 8%;
 }
@@ -122,30 +115,88 @@ th, td {
 .div2 {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
+}
+
+/* finish tablas */
+
+.container3{
+    background-image: url(../../img/background-champions-3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    padding-bottom: 42.8px;
+    text-align: center;
 }
 
 /* Carrusel */
+.containercartas {
+    background-color: rgb(238, 238, 228);
+    padding: 2%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
 .carrusel {
     padding: 16px;
     display: flex;
     overflow-y: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 .carta {
     margin-right: 10px;
     position: relative;
-    text-align: center;
 }
+
 .carta img {
     width: 200px;
     height: 300px;
-    object-fit: cover; /* rellena espacio */
+    object-fit: cover;
 }
+
 .cuerpo_carta {
-    border-top-style: none;
+    /* position: absolute; */
+    /* Sobreponer */
+    bottom: 0;
+    text-align: center;
     padding: 10px;
-    color: rgb(255, 255, 255)
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    color: rgb(0, 0, 0);
 }
-.cuerpo_carta h5, .cuerpo_carta p {
+
+.cuerpo_carta h5,
+.cuerpo_carta p {
     margin: 0;
 }
-/* ~~~ */
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* ~~~~~ */
+
+.bloquess {
+    background-image: url(../../img/background-champions-3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    padding-bottom: 2%;
+}
+
+.bloque1 {
+    height: 480px; /* Alto del bloque*/
+    width: 44.5%; /* Ancho del bloque*/
+    float: left;
+}
+.bloque2 {
+    height: 224px;
+    width: 23%;
+    display: inline-block;
+}
