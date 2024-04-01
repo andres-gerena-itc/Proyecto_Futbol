@@ -38,24 +38,28 @@
         <!-- Menú desplegable -->
         <div class="container2 desplegable">
             <div class="container2">
+
                 <form action="#">
-                    <label>Jugadores</label>
-                    <select>
-                        <option value=""></option>
+
+                    <label>Jugadores</label> 
+                    <!-- onchange = permiten definir una acción a ejecutar cuando una situación ocurre -->
+
+                    <select id="opciones" name="opciones" onchange="alert('Has seleccionado: ' + this.value)">
+                        <option value=""></option>  
                         <option value="Kylian Mbappé">Kylian Mbappé</option>
                         <option value="Erling Haaland">Erling Haaland</option>
                         <option value="Lionel Messi">Lionel Messi</option>
                         <option value="Mohamed Salah">Mohamed Salah</option>
                         <option value="Karim Benzema">Karim Benzema</option>
                     </select>
-                    <input type="submit" value="Enviar" />
+                    <button type="button" onclick="">Guardar</button>
                 </form>
             </div>
 
             <div class="container2 desplegable">
                 <form action="#">
                     <label>Equipos</label>
-                    <select>
+                    <select id="opciones" name="opciones" onchange="alert('Has seleccionado: ' + this.value)" >
                         <option value=""></option>
                         <option value="Paris Saint-Germain (PSG)">Paris Saint-Germain (PSG)</option>
                         <option value="Real Madrid">Real Madrid</option>
@@ -63,25 +67,24 @@
                         <option value="Liverpool">Liverpool</option>
                         <option value="Manchester City ">Manchester City </option>
                     </select>
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Guardar" />
                 </form>
             </div>
 
             <div class="container2 desplegable">
                 <form action="#">
                     <label>Máx goleadores</label>
-                    <select>
+                    <select id="opciones" name="opciones" onchange="alert('Has seleccionado: ' + this.value)">
                         <option value=""></option>
-                        <option value="CR7">Cristiano Ronaldo (141)</option>
-                        <option value="Messi">Lionel Messi (129)</option>
-                        <option value="Maluco">Robert Lewandowski(94)</option>
+                        <option value="Cristiano Ronaldo">Cristiano Ronaldo (141)</option>
+                        <option value="Lionel Messi ">Lionel Messi (129)</option>
+                        <option value="Robert Lewandowski">Robert Lewandowski(94)</option>
                     </select>
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Guardar" />
                 </form>
             </div>
         </div>
     </div>
-
 
     <!-- Creación de tablas, mezcla con <th> y <td> -->
     <div class="container">
@@ -274,8 +277,7 @@
     <div class="banner">
         <div class="banner-cont">
             <div class="bloques bloque1">
-                <iframe class="vid1" width="560" height="315"
-                    src="../assets/vid/💥 RESUMEN FECHA 1 CHAMPIONS LEAGUE 23_24 _ TODOS LOS GOLES.mp4"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H69TQzMMlpM?si=9wK1RoRv5DkAyYRZ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

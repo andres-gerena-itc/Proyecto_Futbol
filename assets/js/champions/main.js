@@ -9,3 +9,9 @@ formulario.addEventListener("submit", (e) => {
     const email = document.getElementById("email");
     email.value = "";
 });
+
+function mostrarOpcionSeleccionada() {
+    var select = document.getElementById("opciones");
+    var opcionSeleccionada = select.options[select.selectedIndex].text;
+    alert("Has seleccionado: " + opcionSeleccionada);
+  }
