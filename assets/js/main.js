@@ -43,13 +43,13 @@ var today = new Date();
 let hora = today.getHours();
 let mes = today.getMonth();
 
+
 if (hora >= 18) {
-    itemOne.textContent = "METRICAS NOCTURNAS";
+    itemOne.textContent = "METRICAS DE MUNDIAL Y CHAMPIONS";
 }
 else if (hora >= 9) {
-    itemOne.textContent = "ESTADISTICAS";
+    itemOne.textContent = "ESTADISTICAS DE CHAMPIONS Y MUNDIAL";
 }
-
 
 
 // Agrego elementos a la lista
@@ -58,6 +58,6 @@ var newEl = document.createElement('li');
 var newText = document.createTextNode('2019-2020 - Robert Lewandowski 15' );
 newEl.appendChild(newText);
 
-// Selecciona específicamente donde quiero que afecte
+// Selecciono específicamente el elemento donde quiero que afecte
 var position = document.querySelector('.col1 ul');
 position.appendChild(newEl);
