@@ -7,6 +7,10 @@
     <link rel="icon" href="../assets/img/logo-champions-icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/champions/style.css">
     <link rel="stylesheet" href="../assets/js/main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/js/main.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
     <title>UEFA Champions league</title>
 </head>
@@ -25,13 +29,15 @@
         </nav>
     </header>
 
-    <div id="banner"> <br>
-        <img class="uefalogo" src="../assets/img/ucl-logo-blanco.png">
-        <h1 class="nav">DESTACADOS</h1>
+    <div class="fondo">
+        <div id="banner"> <br>
+            <img class="uefalogo" src="../assets/img/ucl-logo-blanco.png">
+            <h1 class="nav">DESTACADOS</h1>
+        </div>
 
         <!-- Menú desplegable -->
         <div class="container2 desplegable">
-            <div class="desplegable">
+            <div class="container2">
                 <form action="#">
                     <label>Jugadores</label>
                     <select>
@@ -45,6 +51,7 @@
                     <input type="submit" value="Enviar" />
                 </form>
             </div>
+
             <div class="container2 desplegable">
                 <form action="#">
                     <label>Equipos</label>
@@ -59,6 +66,7 @@
                     <input type="submit" value="Enviar" />
                 </form>
             </div>
+
             <div class="container2 desplegable">
                 <form action="#">
                     <label>Máx goleadores</label>
@@ -77,7 +85,7 @@
 
     <!-- Creación de tablas, mezcla con <th> y <td> -->
     <div class="container">
-        <table id=Tabla class="table">
+        <table class="table">
             <caption class="caption1">Estadísticas del jugador</caption>
             <tr>
                 <th></th>
@@ -155,12 +163,21 @@
                     <td>82.5</td>
                     <td>34</td>
                 </tr>
+                <tr>
+                    <td>
+                        <div class="div2"><img class="jugador" src="../assets/img/mbappeCa.png" alt="">
+                            Kylian Mbappé <br> Paris Saint-Germain F. C. - Delantero
+                        </div>
+                    </td>
+                    <td>720</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>70.8</td>
+                    <td>36.1</td>
+                </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td>hfjudhfgdh</td>
-                    <td>dnvdfhidf</td>
-                </tr>
             </tfoot>
         </table>
     </div>
@@ -171,81 +188,81 @@
 
     <!-- Carrusel -->
 
-    <div class="containercartas">
+    <div class="jugadores">
         <h2> Road to the Final de FIFA 24 </h2>
         <div class="carrusel">
             <div class="carta">
-                <img src="../assets/img/kaneCh.png">
+                <img class="img-cart" src="../assets/img/kaneCh.png">
                 <div class="cuerpo_carta">
                     <h5> Bayern de Múnich </h5>
                     <p> Harry Kane </p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/reusCh.png">
+                <img class="img-cart" src="../assets/img/reusCh.png">
                 <div class="cuerpo_carta">
                     <h5>Borussia Dortmund</h5>
                     <p>Marco Reus</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/riceCh.png">
+                <img class="img-cart" src="../assets/img/riceCh.png">
                 <div class="cuerpo_carta">
                     <h5>Arsenal F. C.</h5>
                     <p>Declan Rice</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/kroosCh.png">
+                <img class="img-cart" src="../assets/img/kroosCh.png">
                 <div class="cuerpo_carta">
                     <h5>Real Madrid C. F.</h5>
                     <p>Toni Kroos</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/barellaCh.png">
+                <img class="img-cart" src="../assets/img/barellaCh.png">
                 <div class="cuerpo_carta">
                     <h5>Inter de Milán</h5>
                     <p>Nicolò Barella</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/haalandCh.png">
+                <img class="img-cart" src="../assets/img/haalandCh.png">
                 <div class="cuerpo_carta">
                     <h5>Manchester City F. C.</h5>
                     <p>Erling Braut Haaland</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/machadoCh.png">
+                <img class="img-cart" src="../assets/img/machadoCh.png">
                 <div class="cuerpo_carta">
                     <h5>Racing Club de Lens </h5>
                     <p>Deiver Machado</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/osimhenCh.png">
+                <img class="img-cart" src="../assets/img/osimhenCh.png">
                 <div class="cuerpo_carta">
                     <h5>Società Sportiva Calcio Napoli </h5>
                     <p>Victor James Osimhen</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/griezmannCh.png">
+                <img class="img-cart" src="../assets/img/griezmannCh.png">
                 <div class="cuerpo_carta">
                     <h5>Club Atlético de Madrid </h5>
                     <p>Antoine Griezmann</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/hernandezCh.png">
+                <img class="img-cart" src="../assets/img/hernandezCh.png">
                 <div class="cuerpo_carta">
                     <h5>Associazione Calcio Milan</h5>
                     <p>Théo Bernard François Hernandez</p>
                 </div>
             </div>
             <div class="carta">
-                <img src="../assets/img/lewandowskiCh.png">
+                <img class="img-cart" src="../assets/img/lewandowskiCh.png">
                 <div class="cuerpo_carta">
                     <h5>Fútbol Club Barcelona</h5>
                     <p>Robert Lewandowski</p>
@@ -254,15 +271,74 @@
         </div>
     </div>
 
-    <div class="bloquesss bloques bloque1">
-        <p>Apertura del mundial</p>
+    <div class="banner">
+        <div class="banner-cont">
+            <div class="bloques bloque1">
+                <iframe class="vid1" width="560" height="315"
+                    src="../assets/vid/💥 RESUMEN FECHA 1 CHAMPIONS LEAGUE 23_24 _ TODOS LOS GOLES.mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>RESUMEN FECHA 1 - UEFA CHAMPIONS LEAGUE 23/24</h2>
+            </div>
+            <div class="bloques bloque2">
+                <h2>Equipos clasificados cuartos</h2>
+                <div class="lista">
+                    <nav>
+                        <ol type="1">
+                            <li>Manchester City Football Club</li>
+                            <li>Real Madrid C.F</li>
+                            <ul>
+                                <li>Partidos jugados: 484</li>
+                            </ul>
+                            <li>Bayern de Múnich </li>
+                            <li>Fútbol Club Barcelona</li>
+                            <ul>
+                                <li>Partidos jugados: 333</li>
+                            </ul>
+                            <li>Club Atlético de Madrid</li>
+                            <li>Borussia Dortmund</li>
+                            <li>Arsenal Football Club</li>
+                            <li>París Saint-Germain Football Club</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="bloques bloque2">
-        <p>Mascota</p>
-    </div>
-
-
+    <footer>
+        <div class="containerfooter">
+            <div class="logos">
+                <img src="../assets/img/logoqatar.png" alt="Logo 1">
+                <img src="../assets/img/ucl-logo-blanco.png" alt="Logo 2">
+            </div>
+            <div class="redes-sociales">
+                <h2 class="titulo">REDES SOCIALES</h2>
+                <div>
+                    <a href="https://www.facebook.com/ChampionsLeague/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/ChampionsLeague" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/fifaworldcup/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@fifa" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>Suscribete a nuestro Newsletter</h2>
+                <form id="formulario">
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu Correo" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+                <script src="assets/js/main.js"></script>
+            </div>
+        </div>
+        <div class="inferior">
+            <p>Copyright © 2024 - Todos los derechos reservados.</p>
+            <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
+        </div>
+    </footer>
 </body>
 
 </html>
