@@ -225,6 +225,19 @@
                     </table>
                 </div>
             </div>
+            <div class="recuadros">
+                <div class="juego">
+                    <h2>Juego Didactico</h2>
+                    <p>Ingresa un numero y este numero se sumará desde 0 hasta el numero que elegiste</p>
+                    <input type="number" id="numero">
+                    <button id="boton" type="button" onclick="sumar()">Sumar</button>
+                    <p id="resultado"></p>
+                </div>
+                <div class="copas">
+                    <h2>AÑOS QUE SE DISPUTARON LAS COPAS DEL MUNDO</h2>
+                    <p id="copas-mundiales" class="copasm"></p>
+                </div>
+            </div>
 
             <h2>MEJORES MOMENTOS</h2>
             <p style="text-align: center;">Revive los mejores momentos de las ultimas ediciones de estas grandes
@@ -246,6 +259,7 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+
         </div>
 
     </main>
@@ -257,20 +271,24 @@
                 <img src="assets/img/ucl-logo-blanco.png" alt="Logo 2">
             </div>
             <div class="redes-sociales">
-                <h2 class="titulo">Redes sociales</h2>
+                <h2 class="titulo">REDES SOCIALES</h2>
                 <div>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.yourube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/ChampionsLeague/?locale=es_LA" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/ChampionsLeague" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/fifaworldcup/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@fifa" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <div class="newsletter">
                 <h2>Suscribete a nuestro Newsletter</h2>
-                <form action="#">
-                    <input type="email" placeholder="Ingresa tu Correo">
+                <form id="formulario">
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu Correo" required>
                     <button type="submit">Suscribirme</button>
                 </form>
+                <script src="assets/js/main.js"></script>
             </div>
         </div>
         <div class="inferior">
@@ -280,5 +298,4 @@
     </footer>
 
 </body>
-
 </html>
