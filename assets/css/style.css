@@ -196,10 +196,14 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 27px;
-    position: absolute; /* Posicionamiento absoluto */
-    top: 5%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajuste para centrado horizontal y vertical */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 5%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    /* Ajuste para centrado horizontal y vertical */
     z-index: 1;
 }
 
@@ -341,6 +345,48 @@ tr:hover {
     background-color: #794e00;
 }
 
+/*---------------------*/
+
+
+
+.recuadros{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/*AÑOS COPAS DEL MUNDO*/
+
+.copas {
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    border: solid 3px #ffcc00;
+    border-radius: 15px;
+  }
+  
+  .copasm {
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .copasm:hover {
+    background-color: #794e00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+/*VIDEOS*/
 
 .videos {
     margin: 0 auto;
@@ -354,8 +400,23 @@ tr:hover {
     filter: drop-shadow(rgba(255, 255, 255, 0.699) 0px 0px 15px);
 }
 
+/*--------------------*/
 
 
+/*Juego Suma*/
+
+.juego {
+    position: relative;
+    width: 30%;
+    height: auto;
+    padding: 25px;
+    margin: 50px auto;
+    text-align: center;
+    border: solid 3px #ffcc00;
+    border-radius: 15px;
+}
+
+/*-----------------------*/
 
 
 /*Footer*/
@@ -372,54 +433,55 @@ footer {
     text-align: center;
     padding: 50px 0 0 0;
     width: 100%;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logos img {
+}
+
+.logos img {
     margin-right: 10px;
     width: auto;
     height: 110px;
-  }
-  
-  .redes-sociales {
+}
+
+.redes-sociales {
     margin-left: 20px;
     text-align: center;
-  }
-  
-  .redes-sociales a {
-    margin: 0 5px;;
+}
+
+.redes-sociales a {
+    margin: 0 5px;
+    ;
     color: #fff;
     font-size: 30px;
-  }
+}
 
-  .redes-sociales .titulo {
+.redes-sociales .titulo {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  
-  .redes-sociales a:hover {
+}
+
+.redes-sociales a:hover {
     color: #df688c;
-  }
-  
-  .newsletter {
+}
+
+.newsletter {
     margin-left: 20px;
-  }
-  
-  .newsletter input {
+}
+
+.newsletter input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
-  .newsletter button {
+}
+
+.newsletter button {
     background-color: #000;
     color: #fff;
     padding: 10px 20px;
@@ -427,35 +489,37 @@ footer {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 15px ;
-  }
-  
-  .newsletter button:hover {
+    margin: 0 15px;
+}
+
+.newsletter button:hover {
     background-color: #6e0021;
     color: #ffffff;
-  }
+}
 
-  .inferior {
+.inferior {
     background-color: #222222a8;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 75px;
     width: 100%;
-  }
-  
-  .inferior p {
+}
+
+.inferior p {
     margin: 0;
     font-size: 14px;
-  }
-  
-  .inferior a {
+}
+
+.inferior a {
     color: #fff;
     font-size: 14px;
     margin: 0 5px;
-  }
-  
-  .inferior a:hover {
+}
+
+.inferior a:hover {
     color: #ddd;
-  }
-  
+}
+
+
+/*--------------------------------*/
