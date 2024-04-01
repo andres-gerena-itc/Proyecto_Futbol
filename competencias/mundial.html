@@ -200,7 +200,7 @@
     </div>
 
     <div class="momentos-cont">
-        <h2>MOMENTOS DESTACABLES</h2>
+        <h2 id="cambio">MOMENTOS DESTACABLES</h2>
         <div class="momentos">
             <div class="bloques2 bloque3">
                 <a href="https://www.fifa.com/fifaplus/es/articles/siete-momentos-inolvidables-copa-mundial-fifa-catar-2022"
@@ -561,7 +561,7 @@
                 </table>
             </div>
         </div>
-        <div>
+        <div class="cont-juego">
             <div class="tabla">
                 <table>
                     <thead>
@@ -668,7 +668,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="tabla"></div>
+            <div class="juego">
+                <h2>Juego Didáctico</h2>
+                <p>Ingresa un numero y este numero se sumará desde 0 hasta el numero que elegiste</p>
+                <input type="number" id="numero">
+                <button id="boton" type="button" onclick="sumar()">Sumar</button>
+                <p id="resultado"></p>
+            </div>
         </div>
     </div>
 
@@ -713,4 +719,5 @@
         </div>
     </footer>
 </body>
+
 </html>
